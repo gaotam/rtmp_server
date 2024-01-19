@@ -6,7 +6,7 @@ services:
     container_name: rtmp_server
     ports:
       - 1935:1935
-      - 8080:80
+      - 8000:80
       - 8443:443
     environment:
       - HTTP_PORT=80
