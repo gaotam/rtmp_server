@@ -73,7 +73,7 @@ COPY --from=build-nginx /etc/nginx /etc/nginx
 ENV PATH "${PATH}:/usr/local/nginx/sbin"
 COPY nginx.conf /etc/nginx/nginx.conf.template
 RUN mkdir -p /opt/data && mkdir /www
-RUN mkdir -p /tmp/record/live /tmp/record/hls
+RUN mkdir -p /tmp/record/live /tmp/record/hls /var/log/nginx
 RUN chown -R nobody:root /tmp/record
 
 EXPOSE 1935
