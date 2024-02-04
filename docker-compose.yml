@@ -11,4 +11,5 @@ services:
     environment:
       - HTTP_PORT=80
       - RTMP_PORT=1935
-
+    volumes:
+      - /home/hoangbui/Code/DoAn/uploads/records:/tmp/record/live
